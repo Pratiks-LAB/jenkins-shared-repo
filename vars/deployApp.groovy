@@ -64,8 +64,6 @@ def call() {
                  "$ARTIFACT_URL"
 
 
-            // 3. Deploy downloaded WAR to Tomcat
-
             echo "Stopping Tomcat..."
 
             sudo /opt/tomcat/tomcat-10/bin/shutdown.sh || true
