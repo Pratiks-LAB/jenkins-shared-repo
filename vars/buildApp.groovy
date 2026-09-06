@@ -1,6 +1,9 @@
 def call() {
-    stage('Build') {
-        echo "Building the application"
-        sh 'mvn clean package -DskipTests'
-    }
+    echo "Starting Maven build..."
+
+    sh '''
+        mvn clean package -DskipTests
+    '''
+
+    echo "Maven build completed successfully."
 }
