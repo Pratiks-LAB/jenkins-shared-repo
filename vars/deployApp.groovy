@@ -77,6 +77,8 @@ def call() {
             sudo cp "/tmp/$WAR_NAME" \
                     /opt/tomcat/tomcat-10/webapps/sample-webapp.war
 
+            sudo chown -R ubuntu:ubuntu /opt/tomcat/tomcat-10/webapps/sample-webapp.war
+
             echo "Starting Tomcat..."
 
             sudo /opt/tomcat/tomcat-10/bin/startup.sh
