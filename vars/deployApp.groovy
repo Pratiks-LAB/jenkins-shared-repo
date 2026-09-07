@@ -33,7 +33,7 @@ def call() {
         sh '''
             set -e
 
-            BASE_URL="http://18.212.158.106:8081/artifactory/libs-snapshot-local"
+            BASE_URL="http://3.94.6.222:8081/artifactory/libs-snapshot-local"
             GROUP_PATH="com/example/sample-webapp"
             ARTIFACT_ID="sample-webapp"
             VERSION="1.1-SNAPSHOT"
