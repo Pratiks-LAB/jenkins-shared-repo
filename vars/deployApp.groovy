@@ -14,7 +14,7 @@ def call() {
         sh '''
             set -e
 
-            mvn deploy -s "$MAVEN_SETTINGS"
+            mvn deploy -s "$MAVEN_SETTINGS" -X
         '''
     }
 
